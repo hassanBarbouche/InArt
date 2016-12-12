@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/musichoriz">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Your Music"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/musicbanner"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:backgroundTint="#ffffff">
+        <EditText android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff" />
+      </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:backgroundTint="#ffffff">
+            <EditText android:id="@+id/input_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Descrption"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Song Tag"
+                android:id="@+id/textView5"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="100dp"
+                android:textColor="#fff" />
+
+            <Button
+                android:layout_width="66dp"
+                android:layout_height="56dp"
+                android:background="@drawable/addphoto"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/phototagbtn"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:alpha="0.5"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:entries="@array/Music"
+                android:spinnerMode="dialog"
+
+                android:textColor="#fff"
+                android:id="@+id/spinner2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:text="30 s"
+            android:id="@+id/d_tvcountdown"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp">
+            <com.github.jorgecastilloprz.FABProgressCircle
+                android:id="@+id/fabProgressCirclestop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:arcColor="#00ffff"
+                app:arcWidth="7dp"
+                app:finalIcon="@drawable/ic_done"
+                android:layout_gravity="center_horizontal|top">
+
+                <!-- You can change it with the fab from the library you want to use -->
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fabstop"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:src="@drawable/recstopbtn"
+
+
+                    app:borderWidth="0dp"
+                    />
+
+            </com.github.jorgecastilloprz.FABProgressCircle>
+
+            <com.github.jorgecastilloprz.FABProgressCircle
+                android:id="@+id/fabProgressCirclerec"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:arcColor="#00ffff"
+                app:arcWidth="7dp"
+                app:finalIcon="@drawable/ic_done"
+                android:layout_gravity="center_horizontal|top">
+
+                <!-- You can change it with the fab from the library you want to use -->
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fabrec"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:src="@drawable/recbtn"
+
+
+                    app:borderWidth="0dp"
+                    />
+
+            </com.github.jorgecastilloprz.FABProgressCircle>
+
+            <Button
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+
+                android:background="@drawable/savebtn"
+                android:id="@+id/btnsave"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp" />
+            <Button
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+
+                android:background="@drawable/cancelbtn"
+                android:id="@+id/btncancel"
+                android:layout_marginLeft="20dp" />
+        </FrameLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/addphotobtn"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+        <include
+            android:layout_width="@dimen/drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            layout="@layout/list_view" />
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

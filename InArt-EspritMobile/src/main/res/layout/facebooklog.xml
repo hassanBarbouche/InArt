@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/london3"
+        android:scaleType="matrix"
+        android:layout_gravity="left|top" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|top">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/moi"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#ffff"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/photoface" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logged in as :"
+                android:id="@+id/textView3"
+                android:textSize="20sp"
+                android:textColor="#d30a0a"
+                android:layout_marginLeft="50dp"
+                android:typeface="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barbouche Hassan"
+                android:id="@+id/nom"
+                android:textSize="17sp"
+                android:textColor="#ffffff"
+                android:typeface="normal" />
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="226dp"
+            android:layout_height="41dp"
+            android:textColorHint="#ffffff"
+            android:theme="@style/TextLabel"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:backgroundTint="#ffffff"
+            android:layout_marginTop="17dp"
+
+            android:textIsSelectable="false">
+            <EditText android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Choose Password"
+
+
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you an artist ?"
+            android:id="@+id/switch1"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textOn="Yes"
+            android:textOff="No"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a type of art "
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:entries="@array/operating_systems"
+            android:spinnerMode="dialog"
+            android:textColor="#ffff"
+            android:id="@+id/spinner"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:background="#cc0000">
+
+            <Button
+                android:layout_width="199dp"
+                android:layout_height="94dp"
+                android:id="@+id/enterbtn"
+
+                android:background="@drawable/transparent_button_selector"
+                android:layout_gravity="center_horizontal|bottom|left"
+                android:text="Already a member? Go"
+                android:textStyle="bold"
+                android:textColor="#fff" />
+
+            <Button
+                android:layout_width="199dp"
+                android:layout_height="94dp"
+                android:id="@+id/enter2"
+                android:background="@drawable/transparent_button_selector"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="Sign Up &amp; Go"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

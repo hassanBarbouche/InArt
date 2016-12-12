@@ -1,0 +1,2 @@
+include ':library', ':facebook', ':ListViewAnimations-core', ':progress', ':SwipeTouchListenerTestActivity'
+include ':InArt-EspritMobile'

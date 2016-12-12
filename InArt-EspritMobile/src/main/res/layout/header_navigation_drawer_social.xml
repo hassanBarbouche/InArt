@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/header_navigation_drawer_social_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/cd_main_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/expo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/imageoo"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="20dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="4dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <com.esprit.android.inart.font.RobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="H.Barbouche"
+                    android:textColor="@android:color/white"
+                    android:textSize="21sp"
+                    android:id="@+id/esm"
+
+                    />
+
+                <com.esprit.android.inart.font.RobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="from Tunis, Tunisia"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <com.esprit.android.inart.font.MaterialDesignIconsTextView
+                        android:id="@+id/icon_music"
+                        style="@style/TextViewAppearance.Title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:padding="0dp"
+                        android:text="@string/material_icon_play"
+                        android:textColor="#fff"
+                        android:textSize="22dp" />
+
+                    <com.esprit.android.inart.font.RobotoTextView
+                        android:id="@+id/nbr_music"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="4dp"
+                        android:text="152"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                       />
+
+                    <com.esprit.android.inart.font.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="songs"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <com.esprit.android.inart.font.MaterialDesignIconsTextView
+                        android:id="@+id/icon_event"
+                        style="@style/TextViewAppearance.Title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="0dp"
+                        android:text="@string/material_icon_party"
+                        android:textColor="#fff"
+                        android:textSize="22dp" />
+
+                    <com.esprit.android.inart.font.RobotoTextView
+                        android:id="@+id/nbr_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="4dp"
+                        android:text="15"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        />
+
+                    <com.esprit.android.inart.font.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="events"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <com.esprit.android.inart.font.MaterialDesignIconsTextView
+                        android:id="@+id/icon_photos"
+                        style="@style/TextViewAppearance.Title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:padding="0dp"
+                        android:text="@string/material_icon_image_box"
+                        android:textColor="#fff"
+                        android:textSize="22dp" />
+
+                    <com.esprit.android.inart.font.RobotoTextView
+                        android:id="@+id/nbrphoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="4dp"
+                        android:text="22"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                       />
+
+                    <com.esprit.android.inart.font.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="photos"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <com.esprit.android.inart.font.MaterialDesignIconsTextView
+                        android:id="@+id/icon_videos"
+                        style="@style/TextViewAppearance.Title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:padding="0dp"
+                        android:text="@string/material_icon_video"
+                        android:textColor="#fff"
+                        android:textSize="22dp" />
+
+                    <com.esprit.android.inart.font.RobotoTextView
+                        android:id="@+id/nbr_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="4dp"
+                        android:text="0"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        />
+
+                    <com.esprit.android.inart.font.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="videos"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_top"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header_navigation_drawer_social_image"
+        android:background="#fff" />
+
+</RelativeLayout>

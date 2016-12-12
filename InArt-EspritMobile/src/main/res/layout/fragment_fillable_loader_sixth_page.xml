@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.github.jorgecastillo.FillableLoader
+        android:id="@+id/fillableLoader"
+        android:layout_width="211dp"
+        android:layout_height="300dp"
+
+        android:layout_marginRight="30dp"
+        app:fl_strokeColor="#ffff"
+        app:fl_fillColor="#ffff"
+        app:fl_originalWidth="800"
+        app:fl_originalHeight="800"
+        app:fl_clippingTransform="spikes"
+        app:fl_fillDuration="100"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/clippingTransformMode3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:text="Art Behind Its All Faces ..."
+       >
+
+    </TextView>
+    <TextView
+        android:id="@+id/clippingTransformMode2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:textSize="10sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Join the commnity of thousand of artists from all over the world ... Create your own art interface and add it it whatever art you want . Here we go " />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:id="@+id/letsgo"
+
+        android:background="@drawable/letsgo"
+        android:layout_gravity="center_horizontal"
+        android:text=""
+        android:layout_marginTop="390dp"/>
+
+</FrameLayout>

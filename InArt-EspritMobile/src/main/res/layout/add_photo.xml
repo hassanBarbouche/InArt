@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/noirnuit">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Your Photo"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/tumblrtext"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Lorem ipsum , qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+            android:id="@+id/textView"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:backgroundTint="#ffffff"
+            android:layout_marginTop="20dp">
+        <EditText android:id="@+id/song_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff" />
+      </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:entries="@array/photography"
+            android:spinnerMode="dropdown"
+            android:popupBackground="@drawable/rain"
+            android:dropDownWidth="400dp"
+            android:popupTheme="@style/Spinnerfloat"
+
+            android:textColor="#fff"
+            android:id="@+id/spinner3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" />
+
+        <com.github.jorgecastilloprz.FABProgressCircle
+            android:id="@+id/fabProgressCircle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:arcColor="#00ffff"
+            app:arcWidth="7dp"
+            app:finalIcon="@drawable/ic_done"
+            android:layout_gravity="center_horizontal|top">
+
+            <!-- You can change it with the fab from the library you want to use -->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/loadpic"
+
+
+                app:borderWidth="0dp"
+                />
+
+        </com.github.jorgecastilloprz.FABProgressCircle>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+        <include
+            android:layout_width="@dimen/drawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            layout="@layout/list_view" />
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

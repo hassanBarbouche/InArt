@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <com.github.jorgecastillo.FillableLoader
+      android:id="@+id/fillableLoader"
+      android:layout_width="211dp"
+      android:layout_height="300dp"
+      app:fl_strokeColor="#ffff"
+      app:fl_fillColor="#ffff"
+      app:fl_originalWidth="411"
+      app:fl_originalHeight="500"
+      app:fl_clippingTransform="spikes"
+      app:fl_fillDuration="2000"
+      android:layout_gravity="center"
+      />
+    <TextView
+        android:id="@+id/clippingTransformMode2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:textSize="10sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:text="Come and discover the world of music . Jump from Jazz to Blues , travel between Rock and Country. We have every thing for every taste . See music news , last records and last realses stay tuned, reserve your ticket for events rate and comment artists from all over the world . Post your music and creat your own music interface." />
+
+
+</FrameLayout>
